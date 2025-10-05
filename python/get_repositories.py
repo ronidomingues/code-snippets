@@ -4,7 +4,7 @@ import requests
 # Definindo minhas constantes;
 USER = "ronidomingues" # Usuario do GitHub;
 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) # Diretório base do script;
-OUTPUT_FILE = os.path.join(BASE_DIR, "repositories.txt") # Arquivo de saída;
+OUTPUT_FILE = os.path.join(BASE_DIR, "../data/repositories.txt") # Arquivo de saída;
 
 # Faz a requisição para a API do GitHub afim de obter os repositórios do usuário;
 response = requests.get(f"https://api.github.com/users/{USER}/repos")
